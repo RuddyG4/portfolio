@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-bg: #0B0B10;
+  --color-panel: #12121A;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: #EDEDF2;
+  --color-muted: #A7A7B4;
+  --color-primary: #47CFD6;
+  
+  --background-image-glow: radial-gradient(700px circle at 20% 15%, rgba(71, 207, 214, 0.18), transparent 40%), radial-gradient(600px circle at 80% 30%, rgba(71, 207, 214, 0.12), transparent 45%);
+  
+  --shadow-glow: 0 0 0 1px rgba(71, 207, 214, 0.25), 0 20px 60px rgba(71, 207, 214, 0.15);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  ::selection {
+    background: rgba(71, 207, 214, 0.35);
+  }
+}
